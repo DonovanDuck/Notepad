@@ -1,0 +1,10 @@
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Method_impl.exe.config
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Method_impl.exe
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Method_impl.pdb
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Model_Interface.exe
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Text_model.exe
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Model_Interface.pdb
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Text_model.pdb
+D:\visual studio 2015\Projects\Note_Book\Method_impl\obj\Debug\Method_impl.csprojResolveAssemblyReference.cache
+D:\visual studio 2015\Projects\Note_Book\Method_impl\obj\Debug\Method_impl.exe
+D:\visual studio 2015\Projects\Note_Book\Method_impl\obj\Debug\Method_impl.pdb

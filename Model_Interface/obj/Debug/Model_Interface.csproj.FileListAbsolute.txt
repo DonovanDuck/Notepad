@@ -1,0 +1,8 @@
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\obj\Debug\Model_Interface.csprojResolveAssemblyReference.cache
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\bin\Debug\Model_Interface.exe.config
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\bin\Debug\Model_Interface.exe
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\bin\Debug\Model_Interface.pdb
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\bin\Debug\Text_model.exe
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\bin\Debug\Text_model.pdb
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\obj\Debug\Model_Interface.exe
+D:\visual studio 2015\Projects\Note_Book\Model_Interface\obj\Debug\Model_Interface.pdb

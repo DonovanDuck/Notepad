@@ -1,0 +1,12 @@
+d:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Note_Book.exe.config
+d:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Note_Book.exe
+d:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Note_Book.pdb
+d:\visual studio 2015\Projects\Note_Book\Note_Book\obj\Debug\Note_Book.csprojResolveAssemblyReference.cache
+d:\visual studio 2015\Projects\Note_Book\Note_Book\obj\Debug\Note_Book.exe
+d:\visual studio 2015\Projects\Note_Book\Note_Book\obj\Debug\Note_Book.pdb
+D:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Method_impl.exe
+D:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Model_Interface.exe
+D:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Text_model.exe
+D:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Method_impl.pdb
+D:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Model_Interface.pdb
+D:\visual studio 2015\Projects\Note_Book\Note_Book\bin\Debug\Text_model.pdb

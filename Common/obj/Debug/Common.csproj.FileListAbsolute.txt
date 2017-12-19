@@ -1,0 +1,16 @@
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\Common.exe.config
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\Common.exe
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\Common.pdb
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySql.Data.dll
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySql.Data.Entity.EF6.dll
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySql.Web.dll
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySql.Data.xml
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySql.Data.Entity.EF6.xml
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+d:\visual studio 2015\Projects\Note_Book\Common\bin\Debug\MySql.Web.xml
+d:\visual studio 2015\Projects\Note_Book\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+d:\visual studio 2015\Projects\Note_Book\Common\obj\Debug\Common.csproj.Common.exe.config
+d:\visual studio 2015\Projects\Note_Book\Common\obj\Debug\Common.exe
+d:\visual studio 2015\Projects\Note_Book\Common\obj\Debug\Common.pdb
