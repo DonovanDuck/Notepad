@@ -27,5 +27,7 @@ namespace Model_Interface
         /// 目录
         /// </summary>
         void showMenu();
+        
+        
     }
 }

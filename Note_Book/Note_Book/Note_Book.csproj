@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{35e9c3c6-ebe7-431f-87d5-3b770a9aeeef}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Method_impl\Method_impl.csproj">
       <Project>{f1311e47-8939-4335-8284-62e1a7956b10}</Project>
       <Name>Method_impl</Name>

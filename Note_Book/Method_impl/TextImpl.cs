@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 using System.IO;
 using Text_model;
 using Model_Interface;
+using MySql.Data.Common;
+using MySql.Data.MySqlClient;
+using System.Data;
+using Common;
 
 namespace Method_impl
 {
    public class TextImpl : TextHandle
     {
-
+        private string getsavePath() {
+            return Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory)+"/TEXT";
+        }
         public  void showMenu()
         {
             Console.WriteLine("请输入操纵：\n1.新建  2.打开笔记 3.退出");
@@ -23,7 +29,7 @@ namespace Method_impl
             Text text = new Text();
             try
             {
-                FileInfo fileInfo = new FileInfo(currentFileName);//用此函数时付给currentFileName为要打开的文件明，用GetOpenFile()
+                FileInfo fileInfo = new FileInfo(getsavePath()+currentFileName);//用此函数时付给currentFileName为要打开的文件明，用GetOpenFile()
                 StreamReader reader = fileInfo.OpenText();
                 text.Saveroute = currentFileName;
                 text.Content = reader.ReadToEnd();
@@ -82,14 +88,13 @@ namespace Method_impl
                 {
                     Console.WriteLine("请填写分类名");
                     text.ParentFolder = Console.ReadLine();
-                    Console.WriteLine("请填写保存路径：");
-                    text.Saveroute = Console.ReadLine() + "/" + text.ParentFolder;
+                    text.Saveroute = getsavePath() + "/" + text.ParentFolder;
                 }
                 else
                 {
                     //否，默认保存桌面mytext文件夹
                     text.ParentFolder = "myText";
-                    text.Saveroute = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory) + "/" + text.ParentFolder;
+                    text.Saveroute = getsavePath() + "/" + text.ParentFolder;
                 }
 
                 //判断文件夹是否存在
@@ -101,6 +106,8 @@ namespace Method_impl
                 
             }
         }
+        
+        
     }
 
 }

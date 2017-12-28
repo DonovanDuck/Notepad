@@ -36,8 +36,10 @@ namespace Note_Book
                         }
                     case "2": {
                             text = new Text();
-                            Console.WriteLine("请输入打开文件路径：");
+                            Console.WriteLine("请输入打开文件分类：");
                             String op = Console.ReadLine();
+                            Console.WriteLine("请输入打开文件名：");
+                            op +="/" +Console.ReadLine()+".txt";
                             text = th.OpenFile(op);
 
                             Console.WriteLine("笔记内容：\n"+text.Content);

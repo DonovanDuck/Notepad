@@ -11,6 +11,7 @@ namespace Text_model
         private string _name;//笔记名
         private string _content; //内容
         private string _saveroute; // 保存路径
+        private string _user;// 所属用户
         private string _parentFolder; //所属分类文件夹
         public Text() { }
 
@@ -66,13 +67,17 @@ namespace Text_model
             }
         }
 
-        public Text(string _name, string _content, string _saveroute, string _parentFolder)
+        public string User
         {
-            this.Name = _name;
-            this.Content = _content;
-            this.Saveroute = _saveroute;
-            this.ParentFolder = _parentFolder;
+            get
+            {
+                return _user;
+            }
+
+            set
+            {
+                _user = value;
+            }
         }
-    
-}
+    }
 }
