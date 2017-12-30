@@ -8,3 +8,6 @@ D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Text_model.pdb
 D:\visual studio 2015\Projects\Note_Book\Method_impl\obj\Debug\Method_impl.csprojResolveAssemblyReference.cache
 D:\visual studio 2015\Projects\Note_Book\Method_impl\obj\Debug\Method_impl.exe
 D:\visual studio 2015\Projects\Note_Book\Method_impl\obj\Debug\Method_impl.pdb
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Common.exe
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\MySql.Data.dll
+D:\visual studio 2015\Projects\Note_Book\Method_impl\bin\Debug\Common.pdb

@@ -36,18 +36,6 @@
     <Reference Include="MySql.Data">
       <HintPath>..\Common\bin\Debug\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.Entity.EF6">
-      <HintPath>C:\Users\20586\Desktop\mysql-connector-net-6.10.5-noinstall\v4.5.2\MySql.Data.Entity.EF6.dll</HintPath>
-    </Reference>
-    <Reference Include="MySQL.Data.EntityFrameworkCore">
-      <HintPath>C:\Users\20586\Desktop\mysql-connector-net-6.10.5-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
-    </Reference>
-    <Reference Include="MySQL.Data.EntityFrameworkCore.Design">
-      <HintPath>C:\Users\20586\Desktop\mysql-connector-net-6.10.5-noinstall\v4.5.2\MySQL.Data.EntityFrameworkCore.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Web">
-      <HintPath>C:\Users\20586\Desktop\mysql-connector-net-6.10.5-noinstall\v4.5.2\MySql.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,9 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextDbHandlerImp.cs" />
     <Compile Include="TextImpl.cs" />
   </ItemGroup>
   <ItemGroup>

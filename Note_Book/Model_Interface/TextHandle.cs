@@ -12,12 +12,12 @@ namespace Model_Interface
         /// <summary>
         /// 打开文件
         /// </summary>
-        Text OpenFile(string currentFileName);
+        Text OpenFile();
         /// <summary>
         /// 保存文件
         /// </summary>
         /// <param name="fileText">包含路径的文件名</param>
-        void SaveFile(string fileText, string currentFileName);
+        void SaveFile(Text text);
         /// <summary>
         /// 写入文件
         /// </summary>

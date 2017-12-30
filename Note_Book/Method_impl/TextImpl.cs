@@ -16,22 +16,27 @@ namespace Method_impl
    public class TextImpl : TextHandle
     {
         private string getsavePath() {
-            return Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory)+"/TEXT";
+            string savefodler = System.Configuration.ConfigurationSettings.AppSettings["MySavePathStringModel"];
+            return Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory)+"\\TEXT";
         }
         public  void showMenu()
         {
-            Console.WriteLine("请输入操纵：\n1.新建  2.打开笔记 3.退出");
+            Console.WriteLine("请输入操纵：\n1.新建  2.打开笔记 0.退出");
         }
 
-        public Text OpenFile(string currentFileName)
+        public Text OpenFile()
         {
 
             Text text = new Text();
             try
             {
-                FileInfo fileInfo = new FileInfo(getsavePath()+currentFileName);//用此函数时付给currentFileName为要打开的文件明，用GetOpenFile()
+                Console.WriteLine("请输入打开文件分类：");
+                String op = Console.ReadLine();
+                Console.WriteLine("请输入打开文件名：");
+                string name = Console.ReadLine() + ".txt";
+                FileInfo fileInfo = new FileInfo(getsavePath()+"\\"+ op + "\\"+ name);//用此函数时付给currentFileName为要打开的文件明，用GetOpenFile()
                 StreamReader reader = fileInfo.OpenText();
-                text.Saveroute = currentFileName;
+                text.Saveroute = op;
                 text.Content = reader.ReadToEnd();
                 reader.Close();
 
@@ -45,16 +50,46 @@ namespace Method_impl
             return text;
         }
 
-        public void SaveFile(string fileText, string currentFileName)
+        public void SaveFile(Text text)
         {
-           
             try
             {
+                Console.WriteLine("是否保存笔记（Y or N）:");
+                String yn = Console.ReadLine();
+                //是否保存笔记
+                if (yn.Equals("Y"))
+                {
+                    Console.WriteLine("请填写文件名：");
+                    text.Name = Console.ReadLine() + ".txt";
+                    //创建分类
+                    Console.WriteLine("是否创建分类（Y or N）:");
+                    yn = Console.ReadLine();
+                    if (yn.Equals("Y"))
+                    {
+                        Console.WriteLine("请填写分类名");
+                        text.ParentFolder = Console.ReadLine();
+                        text.Saveroute = getsavePath() + "\\" + text.ParentFolder;
+                    }
+                    else
+                    {
+                        //否，默认保存桌面mytext文件夹
+                        text.ParentFolder = "myText";
+                        text.Saveroute = getsavePath() + "\\" + text.ParentFolder;
+                    }
 
-                StreamWriter writer = new StreamWriter(currentFileName);//此处的currentFileName为要保存到的路径文件名
-                writer.Write(fileText);
-                Console.WriteLine("保存成功");
-                writer.Close();
+                    //判断文件夹是否存在
+                    if (!Directory.Exists(text.Saveroute))
+                    {
+                        Directory.CreateDirectory(text.Saveroute);
+                    }
+
+                    //保存
+                    StreamWriter writer = new StreamWriter(text.Saveroute + "\\" + text.Name);//此处的currentFileName为要保存到的路径文件名
+                    writer.Write(text.Content);
+                    Console.WriteLine("成功保存到：" + text.Saveroute);
+                    writer.Close();
+                }
+               
 
 
             }
@@ -74,37 +109,7 @@ namespace Method_impl
                 end = content.Substring(content.Length - 1, 1);
             }
             text.Content = content.Substring(0, content.Length - 1);
-            Console.WriteLine("是否保存笔记（Y or N）:");
-            String yn = Console.ReadLine();
-            //保存笔记
-            if (yn.Equals("Y"))
-            {
-                Console.WriteLine("请填写文件名：");
-                text.Name = Console.ReadLine() + ".txt";
-                //创建分类
-                Console.WriteLine("是否创建分类（Y or N）:");
-                yn = Console.ReadLine();
-                if (yn.Equals("Y"))
-                {
-                    Console.WriteLine("请填写分类名");
-                    text.ParentFolder = Console.ReadLine();
-                    text.Saveroute = getsavePath() + "/" + text.ParentFolder;
-                }
-                else
-                {
-                    //否，默认保存桌面mytext文件夹
-                    text.ParentFolder = "myText";
-                    text.Saveroute = getsavePath() + "/" + text.ParentFolder;
-                }
-
-                //判断文件夹是否存在
-                if (!Directory.Exists(text.Saveroute))
-                {
-                    Directory.CreateDirectory(text.Saveroute);
-                }
-               
-                
-            }
+            
         }
         
         
